@@ -8,6 +8,7 @@ import hooksPlugin from "eslint-plugin-react-hooks";
 import nextPlugin from "@next/eslint-plugin-next";
 import typescriptParser from "@typescript-eslint/parser";
 import prettierPlugin from "eslint-plugin-prettier";
+import eslintConfigPrettier from "eslint-config-prettier";
 
 // mimic CommonJS variables -- not needed if using CommonJS
 const __filename = fileURLToPath(import.meta.url);
@@ -20,6 +21,7 @@ const compat = new FlatCompat({
 // eslint-disable-next-line import/no-anonymous-default-export
 export default [
   ...compat.extends("next/core-web-vitals"),
+  eslintConfigPrettier,
   {
     languageOptions: {
       globals: { ...globals.browser, ...globals.node },
