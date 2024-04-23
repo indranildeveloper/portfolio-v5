@@ -1,10 +1,20 @@
 import { FC } from "react";
-import ToggleTheme from "./ToggleTheme";
-import { navItems } from "@/data/navItem";
-import { NavItemInterface } from "@/interfaces/data/NavItemsInterface";
-import { buttonVariants } from "../ui/Button";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
+import ToggleTheme from "./ToggleTheme";
+import { Button, buttonVariants } from "../ui/Button";
+import {
+  Sheet,
+  SheetTrigger,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+} from "../ui/Sheet";
+import { cn } from "@/lib/utils";
+import { NavItemInterface } from "@/interfaces/data/NavItemsInterface";
+import { navItems } from "@/data/navItem";
+import { Menu } from "lucide-react";
+
+// TODO: Make the navbar interactive and make it blur
 
 const Navbar: FC = () => {
   return (
@@ -16,7 +26,7 @@ const Navbar: FC = () => {
           </Link>
         </h4>
 
-        <div className="flex gap-4">
+        <div className="hidden gap-4 md:flex">
           {navItems.map((navItem: NavItemInterface) => (
             <span key={navItem.id}>
               <a
@@ -31,7 +41,33 @@ const Navbar: FC = () => {
               </a>
             </span>
           ))}
+          <Button>Resume</Button>
           <ToggleTheme />
+        </div>
+        <div className="flex gap-3 md:hidden">
+          <ToggleTheme />
+
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="outline" size="icon">
+                <Menu />
+              </Button>
+            </SheetTrigger>
+            <SheetContent className="flex flex-col items-center justify-center gap-8">
+              {navItems.map((navItem: NavItemInterface) => (
+                <span key={navItem.id}>
+                  <a
+                    href={`#${navItem.title.toLowerCase()}`}
+                    className="text-xl transition duration-300 hover:text-primary"
+                  >
+                    {navItem.title}
+                  </a>
+                </span>
+              ))}
+
+              <Button size="lg">Resume</Button>
+            </SheetContent>
+          </Sheet>
         </div>
       </header>
     </nav>
