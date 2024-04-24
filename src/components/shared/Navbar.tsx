@@ -2,13 +2,7 @@ import { FC } from "react";
 import Link from "next/link";
 import ToggleTheme from "./ToggleTheme";
 import { Button, buttonVariants } from "../ui/Button";
-import {
-  Sheet,
-  SheetTrigger,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-} from "../ui/Sheet";
+import { Sheet, SheetTrigger, SheetContent } from "../ui/Sheet";
 import { cn } from "@/lib/utils";
 import { NavItemInterface } from "@/interfaces/data/NavItemsInterface";
 import { navItems } from "@/data/navItem";
@@ -18,8 +12,8 @@ import { Menu } from "lucide-react";
 
 const Navbar: FC = () => {
   return (
-    <nav className="border px-10 py-6">
-      <header className="flex items-center justify-between">
+    <nav className="h-20 px-10 shadow-lg">
+      <header className="flex h-full items-center justify-between">
         <h4 className="text-xl font-bold">
           <Link href="/" className="transition duration-300 hover:text-primary">
             Indranil Halder

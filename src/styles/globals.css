@@ -27,7 +27,7 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 217 33% 17%;
     --foreground: 210 40% 98%;
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
@@ -56,4 +56,15 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.canvas-loader {
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.1s infinite ease;
+  transform: translateZ(0);
 }
