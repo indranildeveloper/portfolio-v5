@@ -37,7 +37,7 @@ const CubeModel: FC = () => {
       <spotLight intensity={40} penumbra={0} />
       <pointLight intensity={2500} position={[-10, 10, 10]} />
       <ambientLight intensity={100} position={[10, 10, 10]} />
-      <primitive object={cube.scene} scale={1.4} />
+      <primitive object={cube.scene} scale={1.6} />
     </mesh>
   );
 };
@@ -46,7 +46,7 @@ const CubeCanvas: FC = () => {
   return (
     <Canvas shadows gl={{ preserveDrawingBuffer: true }}>
       <Suspense fallback={<Loader />}>
-        <OrbitControls />
+        <OrbitControls enableZoom={false} />
         <CubeModel />
       </Suspense>
       <Preload all />
