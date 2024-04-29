@@ -5,16 +5,7 @@ const Loader: FC = () => {
   const { progress } = useProgress();
 
   return (
-    <Html
-      as="div"
-      center
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        flexDirection: "column",
-      }}
-    >
+    <Html as="div" center className="flex flex-col items-center justify-center">
       <span className="canvas-loader" />
       <p>{progress.toFixed(2)}%</p>
     </Html>

@@ -24,6 +24,7 @@
     "clsx": "^2.1.0",
     "framer-motion": "^11.1.7",
     "lucide-react": "^0.372.0",
+    "material-ripple-effects": "^2.0.1",
     "next": "^14.2.2",
     "next-themes": "^0.3.0",
     "react": "^18.2.0",

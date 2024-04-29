@@ -1,13 +1,16 @@
 "use client";
 
 import { FC, useEffect, useState } from "react";
-import { MotionButton } from "../ui/Button";
 import Link from "next/link";
 import { PopupModal } from "react-calendly";
+import Ripple from "material-ripple-effects";
+import { MotionButton } from "../ui/Button";
 
 const CallToAction: FC = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [isMounted, setIsMounted] = useState<boolean>(false);
+
+  const ripple = new Ripple();
 
   useEffect(() => {
     setIsMounted(true);
@@ -22,7 +25,7 @@ const CallToAction: FC = () => {
 
   return (
     isMounted && (
-      <div className="mt-4 flex flex-col items-center justify-center gap-4 md:flex-row lg:justify-start">
+      <div className="mt-4 flex items-center justify-center gap-4 md:flex-row lg:justify-start">
         <MotionButton
           whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.9 }}
@@ -33,6 +36,7 @@ const CallToAction: FC = () => {
           }}
           variant="gradient"
           size="xl"
+          onMouseDown={(e) => ripple.create(e, "light")}
         >
           <Link
             href="/resume/resume.pdf"
@@ -54,6 +58,7 @@ const CallToAction: FC = () => {
           size="xl"
           className="to-violet-600"
           onClick={handleOpenModal}
+          onMouseDown={(e) => ripple.create(e, "light")}
         >
           Schedule Call
         </MotionButton>

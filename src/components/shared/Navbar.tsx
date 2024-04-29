@@ -21,7 +21,7 @@ const Navbar: FC = () => {
 
   return (
     isMounted && (
-      <nav className="h-20 px-10 shadow-lg">
+      <nav className="absolute h-20 w-full px-10 shadow-lg">
         <header className="flex h-full items-center justify-between">
           <h4 className="text-xl font-bold">
             <Link

@@ -3875,6 +3875,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"material-ripple-effects@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "material-ripple-effects@npm:2.0.1"
+  checksum: 10c0/d5eccb708ca6c7460f0402fc308cd9c86e442d3abc20394fb2313be47347a7cc67131d1db1b829d835887d897f54892fcb5bad2f5526878164d6f6803e06d05b
+  languageName: node
+  linkType: hard
+
 "merge-stream@npm:^2.0.0":
   version: 2.0.0
   resolution: "merge-stream@npm:2.0.0"
@@ -4523,6 +4530,7 @@ __metadata:
     husky: "npm:^9.0.11"
     lint-staged: "npm:^15.2.2"
     lucide-react: "npm:^0.372.0"
+    material-ripple-effects: "npm:^2.0.1"
     next: "npm:^14.2.2"
     next-themes: "npm:^0.3.0"
     postcss: "npm:^8.4.38"
