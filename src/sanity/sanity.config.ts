@@ -1,5 +1,6 @@
 import { defineConfig } from "sanity";
 import { structureTool } from "sanity/structure";
+import schemas from "./schemas";
 
 // TODO: add schemas
 const sanityConfig = defineConfig({
@@ -9,6 +10,7 @@ const sanityConfig = defineConfig({
   apiVersion: "2024-05-08",
   basePath: "/admin",
   plugins: [structureTool()],
+  schema: { types: schemas },
 });
 
 export default sanityConfig;

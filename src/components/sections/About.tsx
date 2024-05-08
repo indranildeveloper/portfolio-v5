@@ -2,8 +2,12 @@ import { FC } from "react";
 import Image from "next/image";
 import { GraduationCap, Triangle } from "lucide-react";
 import SectionHeading from "../shared/SectionHeading";
+import { getAboutSectionData } from "@/sanity/utils/getSectionData";
+import { PortableText } from "next-sanity";
 
-const About: FC = () => {
+const About: FC = async () => {
+  const aboutSectionContent = await getAboutSectionData("about-section");
+
   return (
     <section
       id="about"
@@ -16,28 +20,9 @@ const About: FC = () => {
 
       <div className="flex flex-col items-start justify-between gap-10 md:flex-row">
         <div className="">
-          <p className="mb-4 text-gray-400">
-            Hello My name is Indranil Halder and I enjoy building full stack web
-            applications. I am writing code for 4+ years. I started my
-            programming journey when I was in the First Year of my Graduation. I
-            have completed my Graduation in Physics and Currently studying
-            Masters Degree in Physics.
-          </p>
-          <p className="mb-4 text-gray-400">
-            Programming is my hobby and passion. I am a self-taught developer
-            and most of the things I have learnt is from Books or Internet,
-            whether it is a Youtube Video or Some Udemy Courses or any other
-            resources.
-          </p>
-          <p className="mb-4 text-gray-400">
-            Fast forward to today I have worked on several technologies and I
-            have built several projects. Currently I am working as the Frontend
-            Developer at Private AI.
-          </p>
-          <p className="mb-4 text-gray-400">
-            Recently I am getting very interested in Machine Learning and
-            Artificial Intelligence and I am currently learning about it.
-          </p>
+          <div className="mb-4 flex flex-col gap-4 text-gray-400">
+            <PortableText value={aboutSectionContent.content} />
+          </div>
 
           <div className="text-gray-400">
             <p>Here are few technologies I have been working with recently:</p>
