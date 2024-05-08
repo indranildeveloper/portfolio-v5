@@ -1,13 +1,13 @@
 import { FC } from "react";
 import Image from "next/image";
-import { GraduationCap } from "lucide-react";
+import { GraduationCap, Triangle } from "lucide-react";
 import SectionHeading from "../shared/SectionHeading";
 
 const About: FC = () => {
   return (
     <section
       id="about"
-      className="mt-40 flex h-full flex-col gap-8 lg:min-h-screen lg:pt-0"
+      className="mt-40 flex h-screen flex-col justify-center gap-8 lg:min-h-screen lg:pt-0"
     >
       <SectionHeading
         Icon={<GraduationCap className="h-10 w-10 text-primary" />}
@@ -38,6 +38,36 @@ const About: FC = () => {
             Recently I am getting very interested in Machine Learning and
             Artificial Intelligence and I am currently learning about it.
           </p>
+
+          <div className="text-gray-400">
+            <p>Here are few technologies I have been working with recently:</p>
+            <div className="grid grid-cols-2 gap-2 p-4">
+              <span className="flex items-center gap-2">
+                <Triangle className="h-4 w-4 rotate-90 fill-primary text-primary" />{" "}
+                React
+              </span>
+              <span className="flex items-center gap-2">
+                <Triangle className="h-4 w-4 rotate-90 fill-primary text-primary" />{" "}
+                React
+              </span>
+              <span className="flex items-center gap-2">
+                <Triangle className="h-4 w-4 rotate-90 fill-primary text-primary" />{" "}
+                React
+              </span>
+              <span className="flex items-center gap-2">
+                <Triangle className="h-4 w-4 rotate-90 fill-primary text-primary" />{" "}
+                React
+              </span>
+              <span className="flex items-center gap-2">
+                <Triangle className="h-4 w-4 rotate-90 fill-primary text-primary" />{" "}
+                React
+              </span>
+              <span className="flex items-center gap-2">
+                <Triangle className="h-4 w-4 rotate-90 fill-primary text-primary" />{" "}
+                React
+              </span>
+            </div>
+          </div>
         </div>
 
         <div className="relative flex justify-end">
@@ -49,7 +79,6 @@ const About: FC = () => {
             width={800}
           />
         </div>
-        {/* TODO: Add some core skills */}
       </div>
     </section>
   );

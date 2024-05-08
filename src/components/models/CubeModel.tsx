@@ -1,5 +1,5 @@
-import { useAnimations, useGLTF } from "@react-three/drei";
 import { FC, useEffect, useRef } from "react";
+import { useAnimations, useGLTF } from "@react-three/drei";
 
 const CubeModel: FC = () => {
   const meshRef = useRef(null);

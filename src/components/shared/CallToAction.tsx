@@ -19,9 +19,12 @@ const CallToAction: FC = () => {
   const handleOpenModal = () => {
     setIsModalOpen(true);
   };
+
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
+
+  // TODO: Make more components
 
   return (
     isMounted && (
@@ -36,7 +39,7 @@ const CallToAction: FC = () => {
           }}
           variant="gradient"
           size="xl"
-          onMouseDown={(e) => ripple.create(e, "light")}
+          onMouseEnter={(e) => ripple.create(e, "light")}
         >
           <Link
             href="/resume/resume.pdf"
@@ -58,7 +61,7 @@ const CallToAction: FC = () => {
           size="xl"
           className="to-violet-600"
           onClick={handleOpenModal}
-          onMouseDown={(e) => ripple.create(e, "light")}
+          onMouseEnter={(e) => ripple.create(e, "light")}
         >
           Schedule Call
         </MotionButton>
