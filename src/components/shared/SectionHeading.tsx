@@ -9,12 +9,12 @@ interface SectionHeadingProps {
 
 const SectionHeading: FC<SectionHeadingProps> = ({ Icon, headingTitle }) => {
   return (
-    <div>
-      <div className="flex items-center gap-2">
-        {Icon}
+    <div className="flex items-center gap-4">
+      <div className="flex flex-shrink-0 flex-grow-0 items-center gap-2">
+        <span>{Icon}</span>
         <h2 className="text-3xl font-bold">{headingTitle}</h2>
       </div>
-      <div className="mt-2 h-2 w-96 min-w-full rounded-full bg-gradient-to-r from-primary to-indigo-600" />
+      <div className="h-2 flex-1 rounded-full bg-gradient-to-r from-primary to-indigo-600" />
     </div>
   );
 };

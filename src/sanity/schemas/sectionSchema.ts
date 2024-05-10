@@ -1,6 +1,6 @@
 const sectionSchema = {
   name: "section",
-  title: "Section",
+  title: "Sections",
   type: "document",
   fields: [
     {
