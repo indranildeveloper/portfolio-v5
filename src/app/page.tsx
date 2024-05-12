@@ -2,6 +2,7 @@ import { FC } from "react";
 import Navbar from "@/components/shared/Navbar";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
+import Experience from "@/components/sections/Experience";
 
 const HomePage: FC = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage: FC = () => {
       <main className="container">
         <Hero />
         <About />
+        <Experience />
       </main>
     </>
   );

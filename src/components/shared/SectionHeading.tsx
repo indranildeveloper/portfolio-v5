@@ -18,4 +18,5 @@ const SectionHeading: FC<SectionHeadingProps> = ({ Icon, headingTitle }) => {
     </div>
   );
 };
+
 export default SectionHeading;

@@ -1,7 +1,7 @@
 import { createClient, groq } from "next-sanity";
 import { sanityClientConfig } from "../constants";
 
-export const getAboutSectionData = async (slug: string) => {
+export const getSectionData = async (slug: string) => {
   const client = createClient(sanityClientConfig);
 
   return client.fetch(

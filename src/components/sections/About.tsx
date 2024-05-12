@@ -3,12 +3,12 @@ import Image from "next/image";
 import { GraduationCap, Triangle } from "lucide-react";
 import { PortableText } from "next-sanity";
 import SectionHeading from "../shared/SectionHeading";
-import { getAboutSectionData } from "@/sanity/utils/getSectionData";
+import { getSectionData } from "@/sanity/utils/getSectionData";
 import { getFeaturedSkills } from "@/sanity/utils/getFeaturedSkills";
 import { FeaturedSkillInterface } from "@/interfaces/shared/FeaturedSkillInterface";
 
 const About: FC = async () => {
-  const aboutSectionContent = await getAboutSectionData("about-section");
+  const section = await getSectionData("about-section");
   const aboutSectionSkills = await getFeaturedSkills();
 
   return (
@@ -18,13 +18,13 @@ const About: FC = async () => {
     >
       <SectionHeading
         Icon={<GraduationCap className="h-10 w-10 text-primary" />}
-        headingTitle={aboutSectionContent.name}
+        headingTitle={section.name}
       />
 
       <div className="flex flex-col items-start justify-between gap-10 md:flex-row">
         <div className="">
           <div className="mb-4 flex flex-col gap-4 text-gray-400">
-            <PortableText value={aboutSectionContent.content} />
+            <PortableText value={section.content} />
           </div>
 
           <div className="text-gray-400">
@@ -35,7 +35,7 @@ const About: FC = async () => {
                   key={item.id}
                   className="flex items-center gap-2 font-mono text-sm"
                 >
-                  <Triangle className="h-4 w-4 rotate-90 fill-primary text-primary" />{" "}
+                  <Triangle className="h-3 w-3 rotate-90 fill-primary text-primary" />{" "}
                   {item.skill}
                 </p>
               ))}
