@@ -43,13 +43,13 @@ const About: FC = async () => {
           </div>
         </div>
 
-        <div className="relative flex justify-end">
+        <div className="flex justify-end">
           <Image
             src="/about.jpg"
             alt="Indranil Halder"
             className="rounded-md shadow-lg shadow-primary"
-            height={600}
-            width={800}
+            height={701}
+            width={526}
           />
         </div>
       </div>

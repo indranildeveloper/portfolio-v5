@@ -13,7 +13,7 @@ const Experience: FC = async () => {
   return (
     <section
       id="experience"
-      className="mt-40 flex min-h-screen flex-col justify-center gap-8 lg:min-h-screen lg:pt-0"
+      className="mt-40 flex h-screen flex-col justify-center gap-8 lg:min-h-screen lg:pt-0"
     >
       <SectionHeading
         Icon={<Laptop2 className="h-10 w-10 text-primary" />}

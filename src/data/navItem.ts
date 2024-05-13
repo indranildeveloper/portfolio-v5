@@ -12,7 +12,7 @@ export const navItems: Array<NavItemInterface> = [
   },
   {
     id: uuidv4(),
-    title: "Work",
+    title: "Projects",
   },
   {
     id: uuidv4(),
