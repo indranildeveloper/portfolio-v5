@@ -1,11 +1,11 @@
 import { FC } from "react";
+import { Code2 } from "lucide-react";
 import SectionHeading from "../shared/SectionHeading";
-import { Laptop2 } from "lucide-react";
-import { getFeaturedProjects } from "@/sanity/utils/getFeaturedProjects";
-import FeaturedProject from "../shared/FeaturedProject";
+import { getProjects } from "@/sanity/utils/getProjects";
+import ProjectCard from "../shared/ProjectCard";
 
 const Projects: FC = async () => {
-  const featuredProjects = await getFeaturedProjects();
+  const projects = await getProjects();
 
   return (
     <section
@@ -13,13 +13,15 @@ const Projects: FC = async () => {
       className="flex flex-col justify-center lg:min-h-screen lg:pt-0"
     >
       <SectionHeading
-        Icon={<Laptop2 className="h-10 w-10 text-primary" />}
-        headingTitle={"Featured Projects"}
+        Icon={<Code2 className="h-10 w-10 text-primary" />}
+        headingTitle={"Projects"}
       />
 
-      <div className="mt-8 flex flex-col gap-4">
-        {featuredProjects.map((project) => (
-          <FeaturedProject key={project._id} project={project} />
+      <div className="mt-8 grid grid-cols-3 gap-6">
+        {projects.map((project) => (
+          <div key={project._id}>
+            <ProjectCard project={project} />
+          </div>
         ))}
       </div>
     </section>

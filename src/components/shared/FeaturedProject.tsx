@@ -15,15 +15,11 @@ import {
 } from "../ui/Card";
 import { Badge } from "../ui/Badge";
 import { buttonVariants } from "../ui/Button";
-import { FeaturedProjectsInterface } from "@/interfaces/shared/FeaturedProjectsInterface";
-
-interface FeaturedProjectsProps {
-  project: FeaturedProjectsInterface;
-}
+import { FeaturedProjectsProps } from "@/interfaces/components/FeaturedProjectsProps";
 
 const FeaturedProject: FC<FeaturedProjectsProps> = ({ project }) => {
   return (
-    <Card className="flex bg-gray-900 p-6">
+    <Card className="flex p-6">
       <div className="relative w-[1000px]">
         <Image
           src={project.image}
