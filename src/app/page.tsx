@@ -3,6 +3,7 @@ import Navbar from "@/components/shared/Navbar";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Experience from "@/components/sections/Experience";
+import Projects from "@/components/sections/Projects";
 
 const HomePage: FC = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage: FC = () => {
         <Hero />
         <About />
         <Experience />
+        <Projects />
       </main>
     </>
   );
