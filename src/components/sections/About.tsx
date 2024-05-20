@@ -14,7 +14,7 @@ const About: FC = async () => {
   return (
     <section
       id="about"
-      className="mt-40 flex h-screen flex-col justify-center gap-8 lg:min-h-screen lg:pt-0"
+      className="flex h-screen min-h-screen flex-col justify-center gap-8 lg:min-h-screen lg:pt-0"
     >
       <SectionHeading
         Icon={<GraduationCap className="h-10 w-10 text-primary" />}
@@ -48,8 +48,8 @@ const About: FC = async () => {
             src="/about.jpg"
             alt="Indranil Halder"
             className="rounded-md shadow-lg shadow-primary"
-            height={701}
-            width={526}
+            height={900}
+            width={800}
           />
         </div>
       </div>

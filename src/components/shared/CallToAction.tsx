@@ -1,19 +1,16 @@
 "use client";
 
-import { FC, useEffect, useState } from "react";
+import { FC, useState, useEffect } from "react";
 import Link from "next/link";
 import { PopupModal } from "react-calendly";
-import Ripple from "material-ripple-effects";
-import { MotionButton } from "../ui/Button";
+import { Button } from "../ui/Button";
 
 const CallToAction: FC = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-  const [isMounted, setIsMounted] = useState<boolean>(false);
-
-  const ripple = new Ripple();
+  const [isDocumentMounted, setIsDocumentMounted] = useState<boolean>(false);
 
   useEffect(() => {
-    setIsMounted(true);
+    setIsDocumentMounted(true);
   }, []);
 
   const handleOpenModal = () => {
@@ -27,20 +24,9 @@ const CallToAction: FC = () => {
   // TODO: Make more components
 
   return (
-    isMounted && (
+    isDocumentMounted && (
       <div className="mt-4 flex items-center justify-center gap-4 md:flex-row lg:justify-start">
-        <MotionButton
-          whileHover={{ scale: 1.04 }}
-          whileTap={{ scale: 0.9 }}
-          transition={{
-            type: "spring",
-            bounce: 0.7,
-            duration: 0.6,
-          }}
-          variant="gradient"
-          size="xl"
-          onMouseEnter={(e) => ripple.create(e, "light")}
-        >
+        <Button size="xl">
           <Link
             href="/resume/resume.pdf"
             className="flex h-full w-full items-center justify-center"
@@ -48,23 +34,10 @@ const CallToAction: FC = () => {
           >
             Resume
           </Link>
-        </MotionButton>
-        <MotionButton
-          whileHover={{ scale: 1.04 }}
-          whileTap={{ scale: 0.9 }}
-          transition={{
-            type: "spring",
-            bounce: 0.7,
-            duration: 0.6,
-          }}
-          variant="gradient"
-          size="xl"
-          className="to-violet-600"
-          onClick={handleOpenModal}
-          onMouseEnter={(e) => ripple.create(e, "light")}
-        >
+        </Button>
+        <Button size="xl" onClick={handleOpenModal}>
           Schedule Call
-        </MotionButton>
+        </Button>
         <PopupModal
           url="https://calendly.com/indranilhalder-dev"
           rootElement={document.getElementById("hero") as HTMLElement}

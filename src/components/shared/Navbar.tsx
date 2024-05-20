@@ -69,7 +69,6 @@ const Navbar: FC = () => {
                   bounce: 0.7,
                   duration: 0.6,
                 }}
-                variant="gradient"
                 size="xl"
               >
                 Resume
