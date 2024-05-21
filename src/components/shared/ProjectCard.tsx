@@ -10,7 +10,7 @@ import { Badge } from "../ui/Badge";
 
 const ProjectCard: FC<ProjectsCardProps> = ({ project }) => {
   return (
-    <Card className="p-6">
+    <Card className="p-6 shadow-xl">
       <CardHeader>
         <div className="mb-6 flex items-center justify-between">
           <LuFolder size={40} className="text-primary" />

@@ -18,7 +18,7 @@ import { FeaturedProjectsProps } from "@/interfaces/components/FeaturedProjectsP
 
 const FeaturedProject: FC<FeaturedProjectsProps> = ({ project }) => {
   return (
-    <Card className="p-6">
+    <Card className="p-6 shadow-xl">
       <div className="">
         <Image
           src={project.image}
