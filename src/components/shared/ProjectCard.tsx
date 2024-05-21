@@ -5,7 +5,6 @@ import { ProjectsCardProps } from "@/interfaces/components/ProjectsCardProps";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/Card";
 import { PortableText } from "next-sanity";
 import { LuExternalLink, LuFolder } from "react-icons/lu";
-import { buttonVariants } from "../ui/Button";
 import { TbBrandGithub } from "react-icons/tb";
 import { Badge } from "../ui/Badge";
 
@@ -40,8 +39,8 @@ const ProjectCard: FC<ProjectsCardProps> = ({ project }) => {
         </div>
         <CardTitle className="text-primary">{project.name}</CardTitle>
       </CardHeader>
-      <CardContent className="flex flex-col gap-8">
-        <div className="text-gray-400">
+      <CardContent className="mt-4 flex flex-col gap-4">
+        <div className="text-sm text-gray-400">
           <PortableText value={project.description} />
         </div>
         <div className="flex flex-wrap items-center gap-2">

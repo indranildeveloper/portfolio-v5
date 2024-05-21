@@ -4,7 +4,7 @@ import { FC } from "react";
 import { ExternalLink } from "lucide-react";
 import { TbBrandGithub } from "react-icons/tb";
 import Image from "next/image";
-import { PortableText } from "@portabletext/react";
+import { PortableText } from "next-sanity";
 import {
   Card,
   CardContent,

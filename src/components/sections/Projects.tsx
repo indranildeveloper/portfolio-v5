@@ -14,7 +14,7 @@ const Projects: FC = async () => {
     >
       <SectionHeading
         Icon={<Code2 className="h-10 w-10 text-primary" />}
-        headingTitle={"Projects"}
+        headingTitle={"Other Noteworthy Projects"}
       />
 
       <div className="mt-8 grid grid-cols-3 gap-6">
