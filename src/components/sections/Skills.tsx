@@ -1,15 +1,12 @@
 import { FC } from "react";
 import { FaListCheck } from "react-icons/fa6";
-import SectionHeading from "../shared/SectionHeading";
+import SectionHeading from "../shared/section/SectionHeading";
 import { skills } from "@/data/skills";
-import SkillCard from "../shared/SkillCard";
+import SkillCard from "../shared/skills/SkillCard";
 
 const Skills: FC = () => {
   return (
-    <section
-      id="projects"
-      className="flex flex-col justify-center lg:min-h-screen lg:pt-0"
-    >
+    <section id="projects" className="flex flex-col justify-center">
       <SectionHeading
         Icon={<FaListCheck className="h-10 w-10 text-primary" />}
         headingTitle={"My Skills"}

@@ -2034,6 +2034,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hookform/resolvers@npm:^3.4.2":
+  version: 3.4.2
+  resolution: "@hookform/resolvers@npm:3.4.2"
+  peerDependencies:
+    react-hook-form: ^7.0.0
+  checksum: 10c0/cb8a3e0cc1c9aeaf2adad585f29badf342a96da9cfdf4efa1168aadb7ef52f440cac5cc6fedf0fda6a52effd27a5c859692c89bb99ed5c76d03064aea1f0d684
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.11.14":
   version: 0.11.14
   resolution: "@humanwhocodes/config-array@npm:0.11.14"
@@ -2447,6 +2456,26 @@ __metadata:
     "@types/react":
       optional: true
   checksum: 10c0/e2859ca58bea171c956098ace7ecf615cf9432f58a118b779a14720746b3adcf0351c36c75de131548672d3cd290ca238198acbd33b88dc4706f98312e9317ad
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-label@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@radix-ui/react-label@npm:2.0.2"
+  dependencies:
+    "@babel/runtime": "npm:^7.13.10"
+    "@radix-ui/react-primitive": "npm:1.0.3"
+  peerDependencies:
+    "@types/react": "*"
+    "@types/react-dom": "*"
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    "@types/react-dom":
+      optional: true
+  checksum: 10c0/a6528735b9f3e15ad83b7a905861bbc5a9b9236716957d6e99902bbfced0472aed4ddbf519bc0e6c41f528986e7acf7270cf0734a2fc380a547a8640809d3a81
   languageName: node
   linkType: hard
 
@@ -9319,9 +9348,11 @@ __metadata:
   dependencies:
     "@eslint/eslintrc": "npm:^3.1.0"
     "@eslint/js": "npm:^9.3.0"
+    "@hookform/resolvers": "npm:^3.4.2"
     "@next/eslint-plugin-next": "npm:^14.2.3"
     "@portabletext/react": "npm:^3.0.18"
     "@radix-ui/react-dialog": "npm:^1.0.5"
+    "@radix-ui/react-label": "npm:^2.0.2"
     "@radix-ui/react-slot": "npm:^1.0.2"
     "@tailwindcss/typography": "npm:^0.5.13"
     "@types/node": "npm:^20.12.12"
@@ -9357,6 +9388,7 @@ __metadata:
     react: "npm:^18.3.1"
     react-calendly: "npm:^4.3.0"
     react-dom: "npm:^18.3.1"
+    react-hook-form: "npm:^7.51.5"
     react-icons: "npm:^5.2.1"
     sanity: "npm:^3.42.1"
     styled-components: "npm:^6.1.11"
@@ -9367,6 +9399,7 @@ __metadata:
     typewriter-effect: "npm:^2.21.0"
     uuid: "npm:^9.0.1"
     yarn-upgrade-all: "npm:^0.7.2"
+    zod: "npm:^3.23.8"
   languageName: unknown
   linkType: soft
 
@@ -9801,6 +9834,15 @@ __metadata:
     "@types/react":
       optional: true
   checksum: 10c0/0df78f5b3367514b3443802f46ab5f12f583c823c9b885841b2ae99af7bd8871d85904ca47ccc767855684ee23cb63ed6f6b96cc7dcd37a594e9eece142706e7
+  languageName: node
+  linkType: hard
+
+"react-hook-form@npm:^7.51.5":
+  version: 7.51.5
+  resolution: "react-hook-form@npm:7.51.5"
+  peerDependencies:
+    react: ^16.8.0 || ^17 || ^18
+  checksum: 10c0/5b13f99a125d92ee618f2d4e218d5ec854f8cac1b568e83b4b125efb002cc79eef0f5c06b54015c78e16a830cf1ea356a646e8c6abb00b7ca8225dba9a92091e
   languageName: node
   linkType: hard
 
@@ -12352,7 +12394,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:^3.22.4":
+"zod@npm:^3.22.4, zod@npm:^3.23.8":
   version: 3.23.8
   resolution: "zod@npm:3.23.8"
   checksum: 10c0/8f14c87d6b1b53c944c25ce7a28616896319d95bc46a9660fe441adc0ed0a81253b02b5abdaeffedbeb23bdd25a0bf1c29d2c12dd919aef6447652dd295e3e69

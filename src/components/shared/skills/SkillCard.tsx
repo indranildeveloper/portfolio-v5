@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { SkillCardProps } from "@/interfaces/components/SkillCardProps";
-import { Card, CardHeader, CardTitle } from "../ui/Card";
+import { Card, CardHeader, CardTitle } from "../../ui/Card";
 
 const SkillCard: FC<SkillCardProps> = ({ skillItem }) => {
   return (

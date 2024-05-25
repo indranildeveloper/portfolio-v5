@@ -2,11 +2,11 @@
 
 import { FC } from "react";
 import { ProjectsCardProps } from "@/interfaces/components/ProjectsCardProps";
-import { Card, CardContent, CardHeader, CardTitle } from "../ui/Card";
+import { Card, CardContent, CardHeader, CardTitle } from "../../ui/Card";
 import { PortableText } from "next-sanity";
 import { LuExternalLink, LuFolder } from "react-icons/lu";
 import { TbBrandGithub } from "react-icons/tb";
-import { Badge } from "../ui/Badge";
+import { Badge } from "../../ui/Badge";
 
 const ProjectCard: FC<ProjectsCardProps> = ({ project }) => {
   return (

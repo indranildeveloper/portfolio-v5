@@ -2,7 +2,7 @@ import { FC } from "react";
 import { Laptop2, Triangle } from "lucide-react";
 import { TbExternalLink } from "react-icons/tb";
 import { PortableText } from "next-sanity";
-import SectionHeading from "../shared/SectionHeading";
+import SectionHeading from "../shared/section/SectionHeading";
 import { getExperiences } from "@/sanity/utils/getExperiences";
 import { getSectionData } from "@/sanity/utils/getSectionData";
 

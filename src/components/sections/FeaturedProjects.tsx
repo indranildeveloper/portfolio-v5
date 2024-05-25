@@ -1,17 +1,14 @@
 import { FC } from "react";
-import SectionHeading from "../shared/SectionHeading";
+import SectionHeading from "../shared/section/SectionHeading";
 import { Laptop2 } from "lucide-react";
 import { getFeaturedProjects } from "@/sanity/utils/getFeaturedProjects";
-import FeaturedProject from "../shared/FeaturedProject";
+import FeaturedProject from "../shared/projects/FeaturedProject";
 
 const FeaturedProjects: FC = async () => {
   const featuredProjects = await getFeaturedProjects();
 
   return (
-    <section
-      id="featured-projects"
-      className="flex flex-col justify-center lg:min-h-screen lg:pt-0"
-    >
+    <section id="featured-projects" className="flex flex-col justify-center">
       <SectionHeading
         Icon={<Laptop2 className="h-10 w-10 text-primary" />}
         headingTitle={"Featured Projects"}

@@ -12,8 +12,8 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "../ui/Card";
-import { Badge } from "../ui/Badge";
+} from "../../ui/Card";
+import { Badge } from "../../ui/Badge";
 import { FeaturedProjectsProps } from "@/interfaces/components/FeaturedProjectsProps";
 
 const FeaturedProject: FC<FeaturedProjectsProps> = ({ project }) => {

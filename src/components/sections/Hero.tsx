@@ -1,15 +1,12 @@
 "use client";
 
 import { FC } from "react";
-import Writing from "../shared/Writing";
-import CallToAction from "../shared/CallToAction";
+import Writing from "../shared/hero/Writing";
+import CallToAction from "../shared/hero/CallToAction";
 
 const Hero: FC = () => {
   return (
-    <section
-      id="hero"
-      className="flex h-full items-center gap-2 lg:min-h-screen lg:pt-0"
-    >
+    <section id="hero" className="flex items-center gap-2">
       <div className="mt-40 flex flex-col justify-start gap-2 text-left lg:mt-0">
         <p className="font-mono text-primary">Hello there! My name is</p>
         <h1 className="text-4xl font-bold lg:text-6xl">Indranil Halder.</h1>

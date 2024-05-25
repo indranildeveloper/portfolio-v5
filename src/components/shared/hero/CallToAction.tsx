@@ -3,7 +3,7 @@
 import { FC, useState, useEffect } from "react";
 import Link from "next/link";
 import { PopupModal } from "react-calendly";
-import { Button } from "../ui/Button";
+import { Button } from "../../ui/Button";
 
 const CallToAction: FC = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);

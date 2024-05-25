@@ -3,9 +3,9 @@
 import { FC } from "react";
 import Link from "next/link";
 import { Menu } from "lucide-react";
-import ToggleTheme from "./ToggleTheme";
-import { Button, buttonVariants, MotionButton } from "../ui/Button";
-import { Sheet, SheetTrigger, SheetContent } from "../ui/Sheet";
+import ToggleTheme from "../theme/ToggleTheme";
+import { Button, buttonVariants, MotionButton } from "../../ui/Button";
+import { Sheet, SheetTrigger, SheetContent } from "../../ui/Sheet";
 import { cn } from "@/lib/utils";
 import { NavItemInterface } from "@/interfaces/data/NavItemsInterface";
 import { navItems } from "@/data/navItem";

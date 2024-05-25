@@ -2,7 +2,7 @@ import { FC } from "react";
 import Image from "next/image";
 import { GraduationCap, Triangle } from "lucide-react";
 import { PortableText } from "next-sanity";
-import SectionHeading from "../shared/SectionHeading";
+import SectionHeading from "../shared/section/SectionHeading";
 import { getSectionData } from "@/sanity/utils/getSectionData";
 import { getFeaturedSkills } from "@/sanity/utils/getFeaturedSkills";
 import { FeaturedSkillInterface } from "@/interfaces/shared/FeaturedSkillInterface";
@@ -12,10 +12,7 @@ const About: FC = async () => {
   const aboutSectionSkills = await getFeaturedSkills();
 
   return (
-    <section
-      id="about"
-      className="flex h-screen min-h-screen flex-col justify-center gap-8 lg:min-h-screen lg:pt-0"
-    >
+    <section id="about" className="flex flex-col justify-center gap-8">
       <SectionHeading
         Icon={<GraduationCap className="h-10 w-10 text-primary" />}
         headingTitle={section.name}

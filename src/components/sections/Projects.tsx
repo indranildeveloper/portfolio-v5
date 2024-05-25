@@ -1,17 +1,14 @@
 import { FC } from "react";
 import { Code2 } from "lucide-react";
-import SectionHeading from "../shared/SectionHeading";
+import SectionHeading from "../shared/section/SectionHeading";
 import { getProjects } from "@/sanity/utils/getProjects";
-import ProjectCard from "../shared/ProjectCard";
+import ProjectCard from "../shared/projects/ProjectCard";
 
 const Projects: FC = async () => {
   const projects = await getProjects();
 
   return (
-    <section
-      id="projects"
-      className="flex flex-col justify-center lg:min-h-screen lg:pt-0"
-    >
+    <section id="projects" className="flex flex-col justify-center">
       <SectionHeading
         Icon={<Code2 className="h-10 w-10 text-primary" />}
         headingTitle={"Other Noteworthy Projects"}
