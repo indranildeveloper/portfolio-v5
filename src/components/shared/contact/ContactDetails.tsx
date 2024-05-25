@@ -30,7 +30,7 @@ const ContactDetails: FC = () => {
         <div className="mt-4 flex flex-col gap-4">
           <a
             href="tel:+916294716288"
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 transition-all duration-300 hover:text-primary"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -38,7 +38,7 @@ const ContactDetails: FC = () => {
           </a>
           <a
             href="mailto:indranilhalder.dev@gmail.com"
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 transition-all duration-300 hover:text-primary"
             target="_blank"
             rel="noopener noreferrer"
           >
