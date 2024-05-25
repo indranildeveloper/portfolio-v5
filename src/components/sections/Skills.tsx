@@ -3,10 +3,11 @@ import { FaListCheck } from "react-icons/fa6";
 import SectionHeading from "../shared/section/SectionHeading";
 import { skills } from "@/data/skills";
 import SkillCard from "../shared/skills/SkillCard";
+import SectionContainer from "../shared/section/SectionContainer";
 
 const Skills: FC = () => {
   return (
-    <section id="projects" className="flex flex-col justify-center">
+    <SectionContainer id="skills">
       <SectionHeading
         Icon={<FaListCheck className="h-10 w-10 text-primary" />}
         headingTitle={"My Skills"}
@@ -24,7 +25,7 @@ const Skills: FC = () => {
           </div>
         ))}
       </div>
-    </section>
+    </SectionContainer>
   );
 };
 

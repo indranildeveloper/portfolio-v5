@@ -6,13 +6,14 @@ import SectionHeading from "../shared/section/SectionHeading";
 import { getSectionData } from "@/sanity/utils/getSectionData";
 import { getFeaturedSkills } from "@/sanity/utils/getFeaturedSkills";
 import { FeaturedSkillInterface } from "@/interfaces/shared/FeaturedSkillInterface";
+import SectionContainer from "../shared/section/SectionContainer";
 
 const About: FC = async () => {
   const section = await getSectionData("about-section");
   const aboutSectionSkills = await getFeaturedSkills();
 
   return (
-    <section id="about" className="flex flex-col justify-center gap-8">
+    <SectionContainer id="about">
       <SectionHeading
         Icon={<GraduationCap className="h-10 w-10 text-primary" />}
         headingTitle={section.name}
@@ -50,7 +51,7 @@ const About: FC = async () => {
           />
         </div>
       </div>
-    </section>
+    </SectionContainer>
   );
 };
 

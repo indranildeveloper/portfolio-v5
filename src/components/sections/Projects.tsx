@@ -3,12 +3,13 @@ import { Code2 } from "lucide-react";
 import SectionHeading from "../shared/section/SectionHeading";
 import { getProjects } from "@/sanity/utils/getProjects";
 import ProjectCard from "../shared/projects/ProjectCard";
+import SectionContainer from "../shared/section/SectionContainer";
 
 const Projects: FC = async () => {
   const projects = await getProjects();
 
   return (
-    <section id="projects" className="flex flex-col justify-center">
+    <SectionContainer id="extra-projects">
       <SectionHeading
         Icon={<Code2 className="h-10 w-10 text-primary" />}
         headingTitle={"Other Noteworthy Projects"}
@@ -21,7 +22,7 @@ const Projects: FC = async () => {
           </div>
         ))}
       </div>
-    </section>
+    </SectionContainer>
   );
 };
 

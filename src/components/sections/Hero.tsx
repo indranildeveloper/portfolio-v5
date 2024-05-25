@@ -3,10 +3,11 @@
 import { FC } from "react";
 import Writing from "../shared/hero/Writing";
 import CallToAction from "../shared/hero/CallToAction";
+import SectionContainer from "../shared/section/SectionContainer";
 
 const Hero: FC = () => {
   return (
-    <section id="hero" className="flex items-center gap-2">
+    <SectionContainer id="hero">
       <div className="mt-40 flex flex-col justify-start gap-2 text-left lg:mt-0">
         <p className="font-mono text-primary">Hello there! My name is</p>
         <h1 className="text-4xl font-bold lg:text-6xl">Indranil Halder.</h1>
@@ -22,7 +23,7 @@ const Hero: FC = () => {
         </p>
         <CallToAction />
       </div>
-    </section>
+    </SectionContainer>
   );
 };
 

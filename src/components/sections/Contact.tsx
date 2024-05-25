@@ -5,12 +5,13 @@ import { getSectionData } from "@/sanity/utils/getSectionData";
 import { PortableText } from "next-sanity";
 import ContactDetails from "../shared/contact/ContactDetails";
 import ContactForm from "../shared/contact/ContactForm";
+import SectionContainer from "../shared/section/SectionContainer";
 
 const Contact: FC = async () => {
   const section = await getSectionData("contact-section");
 
   return (
-    <section id="contact" className="flex flex-col justify-center">
+    <SectionContainer id="contact">
       <SectionHeading
         Icon={<MdOutlineMarkEmailRead className="h-10 w-10 text-primary" />}
         headingTitle={section.name}
@@ -28,7 +29,7 @@ const Contact: FC = async () => {
           </div>
         </div>
       </div>
-    </section>
+    </SectionContainer>
   );
 };
 
