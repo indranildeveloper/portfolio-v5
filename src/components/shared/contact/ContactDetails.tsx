@@ -25,18 +25,26 @@ const ContactDetails: FC = () => {
 
   return (
     isDocumentMounted && (
-      <div>
+      <div className="text-gray-400">
         <h2 className="text-2xl">Connect With Me</h2>
         <div className="mt-4 flex flex-col gap-4">
-          <p className="flex items-center gap-2">
+          <a
+            href="tel:+916294716288"
+            className="flex items-center gap-2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaWhatsapp size={24} /> <span>+91 6294716288</span>
-          </p>
-          <p className="flex items-center gap-2">
+          </a>
+          <a
+            href="mailto:indranilhalder.dev@gmail.com"
+            className="flex items-center gap-2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <MdOutlineMarkEmailRead size={24} />{" "}
-            <span>
-              <a href="#">indranilhalder.dev@gmail.com</a>
-            </span>
-          </p>
+            <span>indranilhalder.dev@gmail.com</span>
+          </a>
           <SocialLinks />
           <div>
             <Button size="xl" onClick={handleOpenModal}>

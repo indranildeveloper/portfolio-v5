@@ -17,7 +17,7 @@ const Contact: FC = async () => {
       />
 
       <div className="mt-8">
-        <div>
+        <div className="text-gray-400">
           <PortableText value={section.content} />
         </div>
 

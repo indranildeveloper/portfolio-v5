@@ -16,6 +16,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@hookform/resolvers": "^3.4.2",
     "@portabletext/react": "^3.0.18",
     "@radix-ui/react-dialog": "^1.0.5",

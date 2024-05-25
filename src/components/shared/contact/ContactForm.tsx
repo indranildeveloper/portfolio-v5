@@ -3,6 +3,7 @@
 import { FC } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm as useFormsPree, ValidationError } from "@formspree/react";
 import {
   Form,
   FormControl,
@@ -17,6 +18,10 @@ import { Textarea } from "../../ui/Textarea";
 import { FormValidator, FormValidatorType } from "@/validators/form";
 
 const ContactForm: FC = () => {
+  const [state, handleSubmit] = useFormsPree(
+    process.env.NEXT_PUBLIC_FORMSPREE_API_KEY!,
+  );
+
   const form = useForm<FormValidatorType>({
     resolver: zodResolver(FormValidator),
     defaultValues: {
@@ -27,7 +32,9 @@ const ContactForm: FC = () => {
   });
 
   const handleFormSubmit = (values: FormValidatorType) => {
-    console.log(values);
+    handleSubmit(values);
+    form.reset();
+    // TODO)) Create a success page
   };
 
   return (
