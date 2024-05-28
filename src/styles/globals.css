@@ -67,6 +67,10 @@ body {
   @apply rounded-md;
 }
 
+.email {
+  writing-mode: vertical-lr;
+}
+
 /* Scrollbar styles */
 ::-webkit-scrollbar {
   @apply h-2 w-2;

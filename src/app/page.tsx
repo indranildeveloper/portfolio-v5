@@ -8,6 +8,8 @@ import Projects from "@/components/sections/Projects";
 import Skills from "@/components/sections/Skills";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/shared/layout/Footer";
+import Socials from "@/components/shared/layout/Socials";
+import Email from "@/components/shared/layout/Email";
 
 const HomePage: FC = () => {
   return (
@@ -22,6 +24,8 @@ const HomePage: FC = () => {
         <Skills />
         <Contact />
       </main>
+      <Socials />
+      <Email />
       <Footer />
     </>
   );
