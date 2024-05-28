@@ -2,7 +2,7 @@ import { FC } from "react";
 
 const Footer: FC = () => {
   return (
-    <footer className="mt-20 flex h-40 flex-col items-center justify-center gap-2 text-gray-400">
+    <footer className="mt-20 flex h-40 flex-col items-center justify-center gap-2 text-sm text-gray-400">
       <a
         href="https://github.com/indranildeveloper"
         target="_blank"
@@ -11,7 +11,7 @@ const Footer: FC = () => {
       >
         Designed and Developed by Indranil Halder
       </a>
-      <p>Copyright &copy; {new Date().getFullYear()}</p>
+      <p className="font-mono">Copyright &copy; {new Date().getFullYear()}</p>
     </footer>
   );
 };
