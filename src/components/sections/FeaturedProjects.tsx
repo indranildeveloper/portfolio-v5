@@ -15,7 +15,7 @@ const FeaturedProjects: FC = async () => {
         headingTitle={"Featured Projects"}
       />
 
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         {featuredProjects.map((project) => (
           <FeaturedProject key={project._id} project={project} />
         ))}
