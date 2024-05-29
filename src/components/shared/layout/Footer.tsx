@@ -2,7 +2,7 @@ import { FC } from "react";
 
 const Footer: FC = () => {
   return (
-    <footer className="mt-20 flex h-40 flex-col items-center justify-center gap-2 text-sm ">
+    <footer className="mt-20 flex h-40 flex-col items-center justify-center gap-2 text-sm">
       <a
         href="https://github.com/indranildeveloper"
         target="_blank"

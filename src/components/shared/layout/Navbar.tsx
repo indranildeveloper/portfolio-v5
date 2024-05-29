@@ -14,7 +14,7 @@ import { navItems } from "@/data/navItem";
 
 const Navbar: FC = () => {
   return (
-    <nav className="fixed h-20 w-full bg-slate-800/50 px-10 shadow-lg backdrop-blur-md">
+    <nav className="fixed z-50 h-20 w-full bg-white/50 px-10  shadow-lg backdrop-blur-md dark:bg-slate-800/50">
       <header className="flex h-full items-center justify-between">
         <h4 className="text-xl font-bold">
           <Link href="/" className="transition duration-300 hover:text-primary">

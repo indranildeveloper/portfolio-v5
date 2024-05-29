@@ -6,6 +6,8 @@ import { PortableText } from "next-sanity";
 import ContactDetails from "../shared/contact/ContactDetails";
 import ContactForm from "../shared/contact/ContactForm";
 import SectionContainer from "../shared/section/SectionContainer";
+import MapContainer from "../shared/contact/MapContainer";
+import { Separator } from "../ui/Separator";
 
 const Contact: FC = async () => {
   const section = await getSectionData("contact-section");
@@ -22,9 +24,11 @@ const Contact: FC = async () => {
           <PortableText value={section.content} />
         </div>
 
-        <div className="mt-6 flex flex-col items-start gap-8 md:flex-row">
-          <ContactDetails />
-          <div className="flex-grow-1 w-full">
+        <div className="mt-6 flex flex-col items-center gap-8 md:flex-row">
+          <MapContainer />
+          <div className="flex-grow-1 flex w-full flex-col gap-4">
+            <ContactDetails />
+            <Separator />
             <ContactForm />
           </div>
         </div>

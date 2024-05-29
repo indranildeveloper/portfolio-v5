@@ -25,7 +25,7 @@ const ContactDetails: FC = () => {
 
   return (
     isDocumentMounted && (
-      <div className="">
+      <div>
         <h2 className="text-2xl">Connect With Me</h2>
         <div className="mt-4 flex flex-col gap-4">
           <a
