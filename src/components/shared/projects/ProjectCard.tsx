@@ -40,7 +40,7 @@ const ProjectCard: FC<ProjectsCardProps> = ({ project }) => {
         <CardTitle className="text-primary">{project.name}</CardTitle>
       </CardHeader>
       <CardContent className="mt-4 flex flex-col gap-4">
-        <div className="text-sm text-gray-400">
+        <div className="text-sm ">
           <PortableText value={project.description} />
         </div>
         <div className="flex flex-wrap items-center gap-2">

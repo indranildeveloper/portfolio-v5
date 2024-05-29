@@ -15,7 +15,9 @@ const HomePage: FC = () => {
   return (
     <>
       <Navbar />
-      <main className="container">
+      <Socials />
+      <Email />
+      <main className="container px-20 lg:px-10">
         <Hero />
         <About />
         <Experience />
@@ -24,8 +26,6 @@ const HomePage: FC = () => {
         <Skills />
         <Contact />
       </main>
-      <Socials />
-      <Email />
       <Footer />
     </>
   );

@@ -17,8 +17,8 @@ const Contact: FC = async () => {
         headingTitle={section.name}
       />
 
-      <div className="mt-8">
-        <div className="text-gray-400">
+      <div>
+        <div className="">
           <PortableText value={section.content} />
         </div>
 

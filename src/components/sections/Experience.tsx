@@ -21,9 +21,7 @@ const Experience: FC = async () => {
       <div className="flex flex-col gap-6">
         {experienceData.map((experience) => (
           <div key={experience._id} className="flex flex-col gap-2">
-            <h2 className="text-2xl font-bold text-gray-400">
-              {experience.position}
-            </h2>
+            <h2 className="text-2xl font-bold ">{experience.position}</h2>
             <a
               href={experience.url}
               className="flex items-center gap-1 text-primary"
@@ -33,10 +31,8 @@ const Experience: FC = async () => {
               <span>{experience.work_place}</span>
               <TbExternalLink />
             </a>
-            <p className="text-sm text-gray-400">{experience.description}</p>
-            <p className="font-mono text-sm text-gray-400">
-              {experience.timeline}
-            </p>
+            <p className="text-sm ">{experience.description}</p>
+            <p className="font-mono text-sm ">{experience.timeline}</p>
             <div className="w-full">
               <PortableText
                 value={experience.achievements}
@@ -48,7 +44,7 @@ const Experience: FC = async () => {
                   },
                   listItem: {
                     bullet: ({ children }) => (
-                      <li className="flex items-start gap-2 text-gray-400">
+                      <li className="flex items-start gap-2 ">
                         <Triangle className="mt-[8px] h-2 w-2 flex-shrink-0 flex-grow-0 rotate-90 fill-primary text-primary" />
                         <span>{children}</span>
                       </li>

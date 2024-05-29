@@ -49,7 +49,7 @@ const ContactForm: FC = () => {
             name="name"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-gray-400">Name</FormLabel>
+                <FormLabel className="">Name</FormLabel>
                 <FormControl>
                   <Input {...field} placeholder="e.g. John Doe" />
                 </FormControl>
@@ -62,7 +62,7 @@ const ContactForm: FC = () => {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-gray-400">Email</FormLabel>
+                <FormLabel className="">Email</FormLabel>
                 <FormControl>
                   <Input {...field} placeholder="e.g. john@gmail.com" />
                 </FormControl>
@@ -75,7 +75,7 @@ const ContactForm: FC = () => {
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-gray-400">Message</FormLabel>
+                <FormLabel className="">Message</FormLabel>
                 <FormControl>
                   <Textarea
                     {...field}

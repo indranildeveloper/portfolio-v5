@@ -15,7 +15,7 @@ const Projects: FC = async () => {
         headingTitle={"Other Noteworthy Projects"}
       />
 
-      <div className="mt-8 grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-3 gap-6">
         {projects.map((project) => (
           <div key={project._id}>
             <ProjectCard project={project} />

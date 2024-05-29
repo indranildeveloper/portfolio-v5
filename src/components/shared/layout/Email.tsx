@@ -2,7 +2,7 @@ import { FC } from "react";
 
 const Email: FC = () => {
   return (
-    <div className="fixed bottom-0 right-10 flex flex-col items-center gap-4">
+    <div className="fixed bottom-0 right-10 hidden flex-col items-center gap-4 md:flex">
       <div className="flex flex-col gap-4">
         <a
           href="mailto:indranilhalder.dev@gmail.com"

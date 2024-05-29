@@ -31,7 +31,7 @@ const FeaturedProject: FC<FeaturedProjectsProps> = ({ project }) => {
       <div className="mt-6">
         <p className="mb-2 font-mono text-sm text-primary">Featured Project</p>
         <CardHeader className="flex flex-col gap-2">
-          <CardTitle className="text-gray-300">{project.name}</CardTitle>
+          <CardTitle className="">{project.name}</CardTitle>
           <CardDescription>
             <PortableText value={project.description} />
           </CardDescription>

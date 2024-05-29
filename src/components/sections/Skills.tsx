@@ -13,10 +13,10 @@ const Skills: FC = () => {
         headingTitle={"My Skills"}
       />
 
-      <div className="mt-8 flex flex-col gap-4">
+      <div className="flex flex-col gap-4">
         {skills.map((skillGroup) => (
           <div key={skillGroup.id} className="flex flex-col gap-2">
-            <h6 className="text-2xl text-gray-200">{skillGroup.groupName} :</h6>
+            <h6 className="text-2xl ">{skillGroup.groupName} :</h6>
             <div className="grid grid-cols-4 gap-6">
               {skillGroup.skills.map((skillItem) => (
                 <SkillCard key={skillItem.id} skillItem={skillItem} />

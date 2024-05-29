@@ -21,11 +21,11 @@ const About: FC = async () => {
 
       <div className="flex flex-col items-start justify-between gap-10 md:flex-row">
         <div className="">
-          <div className="mb-4 flex flex-col gap-4 text-gray-400">
+          <div className="mb-4 flex flex-col gap-4 ">
             <PortableText value={section.content} />
           </div>
 
-          <div className="text-gray-400">
+          <div className="">
             <p>Here are few technologies I have been working with recently:</p>
             <div className="mt-4 grid grid-cols-2 gap-2 p-4">
               {aboutSectionSkills.skills.map((item: FeaturedSkillInterface) => (
