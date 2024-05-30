@@ -1,23 +1,24 @@
 "use client";
 
-import Link from "next/link";
+import Email from "@/components/shared/layout/Email";
 import Footer from "@/components/shared/layout/Footer";
 import Navbar from "@/components/shared/layout/Navbar";
-import { LuArrowLeft } from "react-icons/lu";
+import Socials from "@/components/shared/layout/Socials";
 import { buttonVariants } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
-import Socials from "@/components/shared/layout/Socials";
-import Email from "@/components/shared/layout/Email";
+import Link from "next/link";
+import { LuArrowLeft } from "react-icons/lu";
 
-const NotFoundPage = () => {
+const SuccessMessagePage = () => {
   return (
     <div>
       <Navbar />
-      <Socials />
       <Email />
-      <main className="flex h-screen flex-col items-center justify-center gap-2">
-        <h1 className="font-mono text-9xl text-primary">404</h1>
-        <h2 className="text-4xl">Page Not Found!</h2>
+      <Socials />
+      <main className="flex h-screen flex-col items-center justify-center gap-4">
+        <h1 className="text-6xl text-primary">Thank You!</h1>
+        <h2 className="text-4xl">Your message has been sent.</h2>
+        <h4 className="text-2xl">I will contact you soon!</h4>
         <Link
           href="/"
           className={cn(
@@ -35,4 +36,4 @@ const NotFoundPage = () => {
   );
 };
 
-export default NotFoundPage;
+export default SuccessMessagePage;

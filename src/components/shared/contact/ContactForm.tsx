@@ -1,6 +1,7 @@
 "use client";
 
 import { FC } from "react";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm as useFormsPree, ValidationError } from "@formspree/react";
@@ -18,6 +19,7 @@ import { Textarea } from "../../ui/Textarea";
 import { FormValidator, FormValidatorType } from "@/validators/form";
 
 const ContactForm: FC = () => {
+  const router = useRouter();
   const [state, handleSubmit] = useFormsPree(
     process.env.NEXT_PUBLIC_FORMSPREE_API_KEY!,
   );
@@ -31,10 +33,13 @@ const ContactForm: FC = () => {
     },
   });
 
+  if (state.succeeded) {
+    router.push("/success");
+  }
+
   const handleFormSubmit = (values: FormValidatorType) => {
     handleSubmit(values);
     form.reset();
-    // TODO)) Create a success page
   };
 
   return (
