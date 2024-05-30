@@ -7,7 +7,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 
 const MapContainer: FC = () => {
   return (
-    <div className="h-[700px] w-full">
+    <div className="h-[740px] w-full">
       <Map
         mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN!}
         mapLib={mapboxgl}
