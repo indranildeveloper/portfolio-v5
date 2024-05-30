@@ -18,7 +18,7 @@ import { FeaturedProjectsProps } from "@/interfaces/components/FeaturedProjectsP
 
 const FeaturedProject: FC<FeaturedProjectsProps> = ({ project }) => {
   return (
-    <Card className="p-6 shadow-xl">
+    <Card className="flex flex-col p-6 shadow-xl">
       <div className="">
         <Image
           src={project.image}
@@ -28,14 +28,20 @@ const FeaturedProject: FC<FeaturedProjectsProps> = ({ project }) => {
           className="h-full rounded-md"
         />
       </div>
-      <div className="mt-6">
-        <p className="mb-2 font-mono text-sm text-primary">Featured Project</p>
-        <CardHeader className="flex flex-col gap-2">
-          <CardTitle className="">{project.name}</CardTitle>
-          <CardDescription>
-            <PortableText value={project.description} />
-          </CardDescription>
-        </CardHeader>
+
+      <div className="flex flex-grow flex-col justify-between">
+        <div className=" mt-6">
+          <p className="mb-2 font-mono text-sm text-primary">
+            Featured Project
+          </p>
+          <CardHeader className="flex flex-col gap-2">
+            <CardTitle>{project.name}</CardTitle>
+            <CardDescription>
+              <PortableText value={project.description} />
+            </CardDescription>
+          </CardHeader>
+        </div>
+
         <CardContent className="mt-4">
           <div className="flex flex-wrap items-center gap-2">
             {project.technologies.map((item: string) => (

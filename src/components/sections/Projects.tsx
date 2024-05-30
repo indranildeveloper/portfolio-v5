@@ -17,9 +17,7 @@ const Projects: FC = async () => {
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
-          <div key={project._id}>
-            <ProjectCard project={project} />
-          </div>
+          <ProjectCard key={project._id} project={project} />
         ))}
       </div>
     </SectionContainer>
