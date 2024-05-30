@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Poppins, Fira_Code } from "next/font/google";
 import { RootLayoutProps } from "@/interfaces/layout/RootLayoutProps";
 import ThemeProvider from "@/providers/ThemeProvider";
+import { constructMetaData } from "@/lib/metadata";
 
 import "@/styles/globals.css";
 
@@ -19,10 +20,7 @@ const firaCode = Fira_Code({
   variable: "--font-mono",
 });
 
-export const metadata: Metadata = {
-  title: "Indranil Halder | Portfolio",
-  description: "Indranil Halder Portfolio Website.",
-};
+export const metadata: Metadata = constructMetaData();
 
 // TODO: Find a solution so that do not need suppressHydrationWarning={true}
 const RootLayout: FC<Readonly<RootLayoutProps>> = ({ children }) => {
