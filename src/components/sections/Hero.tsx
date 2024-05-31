@@ -8,7 +8,7 @@ import SectionContainer from "../shared/section/SectionContainer";
 const Hero: FC = () => {
   return (
     <SectionContainer id="hero">
-      <div className="mt-40 flex flex-col justify-start gap-2 text-left lg:mt-0">
+      <div className="flex flex-col justify-start gap-2 text-left">
         <p className="font-mono text-primary">Hello there! My name is</p>
         <h1 className="text-4xl font-bold text-slate-800 dark:text-slate-100 lg:text-6xl">
           Indranil Halder.
