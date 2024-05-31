@@ -17,7 +17,7 @@ const HomePage: FC = () => {
       <Navbar />
       <Socials />
       <Email />
-      <main className="container px-20 lg:px-10">
+      <main className="container md:px-20 lg:px-10">
         <Hero />
         <About />
         <Experience />

@@ -10,9 +10,9 @@ interface SectionHeadingProps {
 const SectionHeading: FC<SectionHeadingProps> = ({ Icon, headingTitle }) => {
   return (
     <div className="mb-10 flex items-center gap-4">
-      <div className="flex flex-shrink-0 flex-grow-0 items-center gap-2">
+      <div className="flex flex-1 items-center gap-2 md:flex-shrink-0 md:flex-grow-0">
         <span>{Icon}</span>
-        <h2 className="text-3xl font-bold text-slate-700 dark:text-slate-300">
+        <h2 className="text-wrap text-xl font-bold text-slate-700 dark:text-slate-300 md:text-nowrap md:text-3xl">
           {headingTitle}
         </h2>
       </div>
