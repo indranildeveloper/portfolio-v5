@@ -1,8 +1,18 @@
-import { socials } from "@/data/socials";
+"use client";
 
-const Socials = () => {
+import { FC } from "react";
+import { motion } from "framer-motion";
+import { socials } from "@/data/socials";
+import { layoutElementVariants } from "@/animations/layoutElementVariants";
+
+const Socials: FC = () => {
   return (
-    <div className="fixed bottom-0 left-10 hidden flex-col items-center gap-4 md:flex">
+    <motion.div
+      variants={layoutElementVariants}
+      initial="hidden"
+      animate="visible"
+      className="fixed bottom-0 left-10 hidden flex-col items-center gap-4 md:flex"
+    >
       <div className="flex flex-col gap-4">
         {socials.map((item) => (
           <div key={item.id}>
@@ -18,7 +28,7 @@ const Socials = () => {
         ))}
       </div>
       <div className="h-40 w-[1px] bg-gray-400" />
-    </div>
+    </motion.div>
   );
 };
 

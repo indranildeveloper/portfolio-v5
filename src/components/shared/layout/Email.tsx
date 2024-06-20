@@ -1,8 +1,17 @@
+"use client";
+
 import { FC } from "react";
+import { motion } from "framer-motion";
+import { layoutElementVariants } from "@/animations/layoutElementVariants";
 
 const Email: FC = () => {
   return (
-    <div className="fixed bottom-0 right-10 hidden flex-col items-center gap-4 md:flex">
+    <motion.div
+      variants={layoutElementVariants}
+      initial="hidden"
+      animate="visible"
+      className="fixed bottom-0 right-10 hidden flex-col items-center gap-4 md:flex"
+    >
       <div className="flex flex-col gap-4">
         <a
           href="mailto:indranilhalder.dev@gmail.com"
@@ -14,7 +23,7 @@ const Email: FC = () => {
         </a>
       </div>
       <div className="h-40 w-[1px] bg-gray-400" />
-    </div>
+    </motion.div>
   );
 };
 
