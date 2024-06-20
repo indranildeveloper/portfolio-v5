@@ -41,8 +41,8 @@ export const navItemContainerVariants: Variants = {
     transition: {
       type: "spring",
       bounce: 0,
-      duration: 0.4,
-      delayChildren: 0.3,
+      duration: 0.3,
+      delayChildren: 0.2,
       staggerChildren: 0.05,
     },
   },

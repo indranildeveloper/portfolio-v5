@@ -1,9 +1,14 @@
 import { FC } from "react";
+import { motion } from "framer-motion";
 import TypewriterComponent from "typewriter-effect";
+import { heroItemVariants } from "@/animations/heroVariants";
 
 const Writing: FC = () => {
   return (
-    <div className="my-4 font-mono text-primary lg:text-xl">
+    <motion.div
+      variants={heroItemVariants}
+      className="my-4 font-mono text-primary lg:text-xl"
+    >
       <TypewriterComponent
         options={{
           strings: [
@@ -16,7 +21,7 @@ const Writing: FC = () => {
           loop: true,
         }}
       />
-    </div>
+    </motion.div>
   );
 };
 
