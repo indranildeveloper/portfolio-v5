@@ -16,7 +16,7 @@ const AboutContent: FC<AboutContentProps> = ({
     <motion.div
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.8 }}
+      viewport={{ once: true, amount: 0.3 }}
       transition={{ delayChildren: 0.5, staggerChildren: 0.05 }}
       className="flex flex-col items-start justify-between gap-10 md:flex-row"
     >

@@ -10,7 +10,7 @@ const ProjectsContent: FC<ProjectsContentProps> = ({ projects }) => {
     <motion.div
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.3 }}
       transition={{ delayChildren: 0.5, staggerChildren: 0.05 }}
       className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
     >

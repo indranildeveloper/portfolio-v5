@@ -1,9 +1,8 @@
 import { FC } from "react";
 import { FaListCheck } from "react-icons/fa6";
 import SectionHeading from "../shared/section/SectionHeading";
-import { skills } from "@/data/skills";
-import SkillCard from "../shared/skills/SkillCard";
 import SectionContainer from "../shared/section/SectionContainer";
+import SkillsContent from "../shared/skills/SkillsContent";
 
 const Skills: FC = () => {
   return (
@@ -13,18 +12,7 @@ const Skills: FC = () => {
         headingTitle={"My Skills"}
       />
 
-      <div className="flex flex-col gap-4">
-        {skills.map((skillGroup) => (
-          <div key={skillGroup.id} className="flex flex-col gap-2">
-            <h6 className="text-2xl ">{skillGroup.groupName} :</h6>
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4">
-              {skillGroup.skills.map((skillItem) => (
-                <SkillCard key={skillItem.id} skillItem={skillItem} />
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
+      <SkillsContent />
     </SectionContainer>
   );
 };
