@@ -1,9 +1,9 @@
 import { FC } from "react";
 import { Code2 } from "lucide-react";
-import SectionHeading from "../shared/section/SectionHeading";
 import { getProjects } from "@/sanity/utils/getProjects";
-import ProjectCard from "../shared/projects/ProjectCard";
+import SectionHeading from "../shared/section/SectionHeading";
 import SectionContainer from "../shared/section/SectionContainer";
+import ProjectsContent from "../shared/projects/ProjectsContent";
 
 const Projects: FC = async () => {
   const projects = await getProjects();
@@ -15,11 +15,7 @@ const Projects: FC = async () => {
         headingTitle={"Other Noteworthy Projects"}
       />
 
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project) => (
-          <ProjectCard key={project._id} project={project} />
-        ))}
-      </div>
+      <ProjectsContent projects={projects} />
     </SectionContainer>
   );
 };

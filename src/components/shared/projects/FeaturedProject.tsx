@@ -6,7 +6,7 @@ import { TbBrandGithub } from "react-icons/tb";
 import Image from "next/image";
 import { PortableText } from "next-sanity";
 import {
-  Card,
+  MotionCard,
   CardContent,
   CardDescription,
   CardFooter,
@@ -15,10 +15,14 @@ import {
 } from "../../ui/Card";
 import { Badge } from "../../ui/Badge";
 import { FeaturedProjectsProps } from "@/interfaces/components/FeaturedProjectsProps";
+import { projectVariants } from "@/animations/projectVariants";
 
 const FeaturedProject: FC<FeaturedProjectsProps> = ({ project }) => {
   return (
-    <Card className="flex flex-col p-6 shadow-xl">
+    <MotionCard
+      variants={projectVariants}
+      className="flex flex-col p-6 shadow-xl"
+    >
       <div className="">
         <Image
           src={project.image}
@@ -66,7 +70,7 @@ const FeaturedProject: FC<FeaturedProjectsProps> = ({ project }) => {
           </CardFooter>
         </CardContent>
       </div>
-    </Card>
+    </MotionCard>
   );
 };
 

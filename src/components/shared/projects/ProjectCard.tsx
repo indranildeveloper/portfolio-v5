@@ -2,15 +2,19 @@
 
 import { FC } from "react";
 import { ProjectsCardProps } from "@/interfaces/components/ProjectsCardProps";
-import { Card, CardContent, CardHeader, CardTitle } from "../../ui/Card";
+import { MotionCard, CardContent, CardHeader, CardTitle } from "../../ui/Card";
 import { PortableText } from "next-sanity";
 import { LuExternalLink, LuFolder } from "react-icons/lu";
 import { TbBrandGithub } from "react-icons/tb";
 import { Badge } from "../../ui/Badge";
+import { projectVariants } from "@/animations/projectVariants";
 
 const ProjectCard: FC<ProjectsCardProps> = ({ project }) => {
   return (
-    <Card className="flex flex-col justify-between p-6 shadow-xl">
+    <MotionCard
+      variants={projectVariants}
+      className="flex flex-col justify-between p-6 shadow-xl"
+    >
       <CardHeader>
         <div>
           <div className="mb-6 flex items-center justify-between">
@@ -53,7 +57,7 @@ const ProjectCard: FC<ProjectsCardProps> = ({ project }) => {
           ))}
         </div>
       </CardContent>
-    </Card>
+    </MotionCard>
   );
 };
 
