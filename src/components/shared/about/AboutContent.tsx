@@ -23,7 +23,7 @@ const AboutContent: FC<AboutContentProps> = ({
       <div>
         <motion.div
           variants={aboutVariants}
-          className="mb-4 flex flex-col gap-4 "
+          className="mb-4 flex flex-col gap-4"
         >
           <PortableText value={section.content} />
         </motion.div>

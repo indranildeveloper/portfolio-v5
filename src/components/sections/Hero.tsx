@@ -38,7 +38,7 @@ const Hero: FC = () => {
           I build awesome web experiences.
         </motion.h2>
         <Writing />
-        <motion.p variants={heroItemVariants} className=" lg:text-lg">
+        <motion.p variants={heroItemVariants} className="lg:text-lg">
           Full Stack Web3 developer and AI enthusiast who has a predilection for
           design and enjoy working on projects where approaching design and
           development as co-dependent processes can lead to smarter solutions

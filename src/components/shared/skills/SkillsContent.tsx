@@ -17,7 +17,7 @@ const SkillsContent: FC = () => {
     >
       {skills.map((skillGroup) => (
         <div key={skillGroup.id} className="flex flex-col gap-2">
-          <motion.h6 variants={skillsVariants} className="text-2xl ">
+          <motion.h6 variants={skillsVariants} className="text-2xl">
             {skillGroup.groupName} :
           </motion.h6>
           <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4">

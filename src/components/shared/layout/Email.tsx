@@ -15,7 +15,7 @@ const Email: FC = () => {
       <div className="flex flex-col gap-4">
         <a
           href="mailto:indranilhalder.dev@gmail.com"
-          className="email font-mono text-sm transition-all duration-300 hover:text-primary "
+          className="email font-mono text-sm transition-all duration-300 hover:text-primary"
           target="_blank"
           rel="noopener noreferrer"
         >

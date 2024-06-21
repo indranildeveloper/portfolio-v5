@@ -21,7 +21,7 @@ const ExperienceContent: FC<ExperienceContentProps> = ({ experienceData }) => {
         <div key={experience._id} className="flex flex-col gap-2">
           <motion.h2
             variants={experienceVariants}
-            className="text-2xl font-bold "
+            className="text-2xl font-bold"
           >
             {experience.position}
           </motion.h2>
@@ -35,13 +35,10 @@ const ExperienceContent: FC<ExperienceContentProps> = ({ experienceData }) => {
             <span>{experience.work_place}</span>
             <TbExternalLink />
           </motion.a>
-          <motion.p variants={experienceVariants} className="text-sm ">
+          <motion.p variants={experienceVariants} className="text-sm">
             {experience.description}
           </motion.p>
-          <motion.p
-            variants={experienceVariants}
-            className="font-mono text-sm "
-          >
+          <motion.p variants={experienceVariants} className="font-mono text-sm">
             {experience.timeline}
           </motion.p>
           <motion.div variants={experienceVariants} className="w-full">
@@ -55,7 +52,7 @@ const ExperienceContent: FC<ExperienceContentProps> = ({ experienceData }) => {
                 },
                 listItem: {
                   bullet: ({ children }) => (
-                    <li className="flex items-start gap-2 ">
+                    <li className="flex items-start gap-2">
                       <Triangle className="mt-[8px] h-2 w-2 flex-shrink-0 flex-grow-0 rotate-90 fill-primary text-primary" />
                       <span>{children}</span>
                     </li>
