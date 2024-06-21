@@ -1,13 +1,15 @@
 "use client";
 
 import { FC } from "react";
-import Map, { Marker } from "react-map-gl";
+import { motion } from "framer-motion";
 import mapboxgl from "mapbox-gl";
+import Map, { Marker } from "react-map-gl";
+import { contactVariants } from "@/animations/contactVariants";
 import "mapbox-gl/dist/mapbox-gl.css";
 
 const MapContainer: FC = () => {
   return (
-    <div className="h-[740px] w-full">
+    <motion.div variants={contactVariants} className="h-[740px] w-full">
       <Map
         mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN!}
         mapLib={mapboxgl}
@@ -21,7 +23,7 @@ const MapContainer: FC = () => {
       >
         <Marker latitude={22.57} longitude={88.36} />
       </Map>
-    </div>
+    </motion.div>
   );
 };
 
