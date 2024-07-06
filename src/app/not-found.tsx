@@ -1,15 +1,16 @@
 "use client";
 
+import { FC } from "react";
 import Link from "next/link";
+import { LuArrowLeft } from "react-icons/lu";
 import Footer from "@/components/shared/layout/Footer";
 import Navbar from "@/components/shared/layout/Navbar";
-import { LuArrowLeft } from "react-icons/lu";
 import { buttonVariants } from "@/components/ui/Button";
-import { cn } from "@/lib/utils";
 import Socials from "@/components/shared/layout/Socials";
 import Email from "@/components/shared/layout/Email";
+import { cn } from "@/lib/utils";
 
-const NotFoundPage = () => {
+const NotFoundPage: FC = () => {
   return (
     <div>
       <Navbar />

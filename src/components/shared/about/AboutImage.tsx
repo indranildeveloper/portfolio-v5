@@ -1,8 +1,9 @@
+import { FC } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { aboutVariants } from "@/animations/aboutVariants";
 
-const AboutImage = () => {
+const AboutImage: FC = () => {
   return (
     <motion.div variants={aboutVariants} className="flex justify-end">
       <Image

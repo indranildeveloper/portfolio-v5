@@ -4,7 +4,7 @@ import { FC } from "react";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm as useFormsPree, ValidationError } from "@formspree/react";
+import { useForm as useFormsPree } from "@formspree/react";
 import {
   Form,
   FormControl,
