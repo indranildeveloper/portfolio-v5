@@ -7,7 +7,7 @@ import Map, { Marker } from "react-map-gl";
 import { contactVariants } from "@/animations/contactVariants";
 import "mapbox-gl/dist/mapbox-gl.css";
 
-const MapContainer: FC = () => {
+const MapContainer = () => {
   return (
     <motion.div variants={contactVariants} className="h-[740px] w-full">
       <Map
