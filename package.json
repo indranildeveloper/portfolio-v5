@@ -13,7 +13,7 @@
     "format:check": "npm run prettier -- --check",
     "format:fix": "npm run prettier -- --write",
     "types:check": "tsc --noEmit --pretty",
-    "prepare": "husky"
+    "husky": "husky"
   },
   "dependencies": {
     "@formspree/react": "^2.5.1",

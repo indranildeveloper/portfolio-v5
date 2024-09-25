@@ -1,6 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
 import {
-  SiAmazonaws,
   SiApollographql,
   SiBootstrap,
   SiCss3,
@@ -30,7 +29,7 @@ import {
   SiTypescript,
   SiWordpress,
 } from "react-icons/si";
-import { FaSass } from "react-icons/fa6";
+import { FaSass, FaAws } from "react-icons/fa6";
 
 export const skills = [
   {
@@ -203,7 +202,7 @@ export const skills = [
       {
         id: uuidv4(),
         title: "AWS",
-        icon: <SiAmazonaws size={40} />,
+        icon: <FaAws size={42} />,
       },
     ],
   },
