@@ -39,7 +39,6 @@ export default [
       ...hooksPlugin.configs.recommended.rules,
       ...nextPlugin.configs.recommended.rules,
       ...nextPlugin.configs["core-web-vitals"].rules,
-      ...prettierPlugin.configs.recommended.rules,
       "no-console": "warn",
     },
   },
