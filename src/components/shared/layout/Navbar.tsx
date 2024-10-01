@@ -66,13 +66,12 @@ const Navbar: FC = () => {
 
           <ToggleTheme />
         </motion.div>
-        <div className="flex gap-3 md:hidden">
+        <div className="flex gap-1 md:hidden">
           <ToggleTheme />
-
           <Sheet>
             <SheetTrigger asChild>
               <motion.div variants={navItemVariants}>
-                <Button variant="outline" size="icon">
+                <Button variant="ghost" size="icon">
                   <Menu />
                 </Button>
               </motion.div>
@@ -106,6 +105,7 @@ const Navbar: FC = () => {
                   }}
                   variants={navItemMobileVariants}
                   size="xl"
+                  className="bg-gradient-to-b from-blue-500 to-blue-600 text-white hover:shadow-xl"
                 >
                   <Link
                     href="/resume/resume.pdf"

@@ -4,6 +4,11 @@ const experienceSchema = {
   type: "document",
   fields: [
     {
+      name: "serial_number",
+      title: "Serial Number",
+      type: "number",
+    },
+    {
       name: "work_place",
       title: "Work Place",
       type: "string",

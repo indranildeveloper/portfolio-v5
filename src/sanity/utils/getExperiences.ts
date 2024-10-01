@@ -8,6 +8,7 @@ export const getExperiences = async (): Promise<ExperienceInterface[]> => {
   return client.fetch(
     groq`*[_type=="experience"]{
         _id,
+        serial_number,
         work_place,
         position,
         "slug": slug.current,

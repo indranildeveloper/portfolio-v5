@@ -17,7 +17,7 @@ const ToggleTheme: FC = () => {
   return (
     <motion.div variants={navItemVariants}>
       <Button
-        variant="outline"
+        variant="ghost"
         size="icon"
         className="p-2"
         onClick={() => handleThemeChange()}
