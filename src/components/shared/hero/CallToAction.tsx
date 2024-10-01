@@ -11,7 +11,7 @@ const CallToAction: FC = () => {
       variants={heroItemVariants}
       className="mt-4 flex items-center justify-center gap-4 md:flex-row lg:justify-start"
     >
-      <Button size="xl">
+      <Button size="xl" variant="gradient">
         <Link
           href="/resume/resume.pdf"
           className="flex h-full w-full items-center justify-center"

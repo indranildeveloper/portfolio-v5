@@ -24,6 +24,7 @@ const NotFoundPage: FC = () => {
           className={cn(
             buttonVariants({
               size: "xl",
+              variant: "gradient",
             }),
             "mt-8 flex items-center justify-center gap-2",
           )}

@@ -24,7 +24,7 @@ const CalendarModal: FC<CalendarModalProps> = ({ containerId }) => {
   return (
     isMounted && (
       <>
-        <Button size="xl" onClick={handleOpenModal}>
+        <Button size="xl" variant="gradient" onClick={handleOpenModal}>
           Schedule Call
         </Button>
         <PopupModal

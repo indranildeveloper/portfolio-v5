@@ -93,7 +93,7 @@ const ContactForm: FC = () => {
               </FormItem>
             )}
           />
-          <Button type="submit" size="xl">
+          <Button type="submit" size="xl" variant="gradient">
             Send Message
           </Button>
         </form>
