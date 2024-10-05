@@ -49,7 +49,10 @@ const ExperienceContent: FC<ExperienceContentProps> = ({ experienceData }) => {
 
         <div className="min-h-[720px]">
           {experienceData
-            .filter((el) => el.work_place === selectedWorkPlace)
+            .filter(
+              (experienceElement) =>
+                experienceElement.work_place === selectedWorkPlace,
+            )
             .map((experience) => (
               <div
                 key={experience._id}
