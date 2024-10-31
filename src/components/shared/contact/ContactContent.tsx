@@ -29,7 +29,7 @@ const ContactContent: FC<ContactContentProps> = ({ section }) => {
           className="flex-grow-1 flex w-full flex-col gap-4"
         >
           <ContactDetails />
-          <Separator />
+          <Separator className="bg-slate-500" />
           <ContactForm />
         </motion.div>
       </div>
