@@ -76,7 +76,9 @@ const ExperienceContent: FC<ExperienceContentProps> = ({ experienceData }) => {
                     components={{
                       list: {
                         bullet: ({ children }) => (
-                          <ul className="flex flex-col gap-2">{children}</ul>
+                          <ul className="mb-2 flex flex-col gap-2">
+                            {children}
+                          </ul>
                         ),
                       },
                       listItem: {
