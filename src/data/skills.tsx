@@ -12,7 +12,6 @@ import {
   SiHtml5,
   SiJavascript,
   SiKubernetes,
-  SiMicrosoftazure,
   SiMongodb,
   SiMui,
   SiMysql,
@@ -30,6 +29,7 @@ import {
   SiWordpress,
 } from "react-icons/si";
 import { FaSass, FaAws } from "react-icons/fa6";
+import { VscAzure } from "react-icons/vsc";
 
 export const skills = [
   {
@@ -197,7 +197,7 @@ export const skills = [
       {
         id: uuidv4(),
         title: "Azure",
-        icon: <SiMicrosoftazure size={40} />,
+        icon: <VscAzure size={40} />,
       },
       {
         id: uuidv4(),
