@@ -38,7 +38,7 @@ const ExperienceContent: FC<ExperienceContentProps> = ({ experienceData }) => {
                 onClick={() => handleSelectWorkPlace(experience.work_place)}
                 className={cn(
                   selectedWorkPlace === experience.work_place
-                    ? "bg-slate-900/40 text-primary hover:bg-slate-900/40 hover:text-primary"
+                    ? "bg-blue-50 text-primary hover:text-primary dark:bg-slate-900/40 dark:hover:bg-slate-900/40"
                     : "text-opacity-50",
                 )}
               >
